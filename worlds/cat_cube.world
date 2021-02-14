@@ -87,7 +87,7 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <model name='cat_cube'>
-      <pose>1.0 0.0 0.15 3.14159 -0 3.14159</pose>
+      <pose>-1.0 0.0 0.15 3.14159 -0 0</pose>
       <static>1</static>
       <link name='body'>
         <visual name='visual'>
