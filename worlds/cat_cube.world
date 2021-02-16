@@ -87,7 +87,7 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <model name='cat_cube'>
-      <pose>-1.0 0.0 0.15 3.14159 -0 0</pose>
+      <pose>-2.0 0.5 0.15 3.14159 -0 0</pose>
       <static>1</static>
       <link name='body'>
         <visual name='visual'>
@@ -108,10 +108,10 @@
       <wall_time>1613329035 82337523</wall_time>
       <iterations>64424</iterations>
       <model name='cat_cube'>
-        <pose>-1 0 0.15 3.14159 -0 0</pose>
+        <pose>-2.0 0.5 0.15 3.14159 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='body'>
-          <pose>-1 0 0.15 3.14159 -0 0</pose>
+          <pose>-2.0 0.5 0.15 3.14159 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
