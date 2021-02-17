@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import rospy, cv2, cv_bridge, numpy
+import rospy, rospkg, cv2, cv_bridge, numpy
 from sensor_msgs.msg import Image
 
 
@@ -21,7 +21,9 @@ class CatRecognizer(object):
 
         # load the opencv2 XML classifier for cat faces
         # obtained from https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalcatface_extended.xml
-        self.catface_cascade = cv2.CascadeClassifier('catface_detector.xml') 
+        rp = rospkg.RosPack()
+        self.catface_cascade = cv2.CascadeClassifier(
+            rp.get_path('class_meeting_11_cat_recognition') + '/scripts/catface_detector.xml') 
 
         self.seen_first_image = False
 
